@@ -1,7 +1,16 @@
+@font-face {
+    font-family: "Fortnite";
+    src: url(./FORTNITEBATTLEFEST.ttf) format("truetype");
+}
+
 * {
-    font-family: sans-serif;
+    font-family: "Fortnite";
     color: #fff;
     margin: 0;
+}
+
+h1 {
+    letter-spacing: 2px;
 }
 
 body {
@@ -72,4 +81,25 @@ body {
     /* padding: 10px 0; */
 
     border-radius: 0px 0px 10px 10px;
+}
+
+button {
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid #fff;
+
+    padding: 10px;
+
+    position: relative;
+}
+
+button p {
+    position: relative;
+    top: -4px;
 }

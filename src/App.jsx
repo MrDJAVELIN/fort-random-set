@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 const App = () => {
+    useEffect(() => {
+        randomBundle();
+    }, []);
+
     const emptyBundle = {
         skin: { name: "", image: "" },
         backbling: { name: "", image: "" },
@@ -53,7 +57,9 @@ const App = () => {
                         </div>
                     ))}
                 </div>
-                <button onClick={randomBundle}>GENERATE</button>
+                <button onClick={randomBundle}>
+                    <p>GENERATE</p>
+                </button>
             </div>
         </>
     );
